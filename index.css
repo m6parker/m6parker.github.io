@@ -1,0 +1,57 @@
+body{
+    
+    color: coral;
+    background-image: url("back1.jfif");
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: green;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    img{
+        display: none;
+    }
+  }
+  img{
+    border-radius: 40%;
+    padding:5%
+    
+}
+.col-lg-4{
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightpink;
+    border-radius: 30px;
+    
+}
+.col-lg-7{
+    background-color: #ffcccc;
+    padding: 3%;
+    border-radius: 30px;
+}
+button{
+    background-color: coral;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+a:hover{
+    color: black;
+}
+button:hover{
+    background-color: lightpink;
+}
+#buttons{
+    text-align: center;
+}

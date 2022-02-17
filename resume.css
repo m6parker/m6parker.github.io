@@ -1,0 +1,25 @@
+
+h1{
+    padding: 10%;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+}
+.col-lg-7{
+    font-family: monospace;
+    margin-top: 2%;
+    background-color: #e6f9ff;
+}
+.col-lg-4{
+    padding: 40px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    margin: 5px;
+    font-family: monospace;
+    font-size: smaller;
+    background-color: #e6f9ff;
+}
+body{
+    background-color: #ccf2ff;
+}

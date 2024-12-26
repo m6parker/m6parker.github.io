@@ -7,39 +7,88 @@
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link rel="stylesheet" href="index.css">
 
-  <title>Mary Parker</title>
+  <title>Portfolio</title>
 </head>
+
 <body>
-  <div class="container">
-    <div class="row justify-content-evenly">
-      <br>
-      <br>
-      <br>
-    </div>
-    <div class="row justify-content-evenly">
-      <div class="col-lg-4">
 
-        <img src="././AvatarMaker.png">
+<div class="nav-section">
+    <label class="about active">About</label>
+    <label class="projects">Projects</label>
+    <label class="contact">Contact</label>
+    <label class="resume">Resume</label>
+</div>
 
-        <h1>Mary Parker</h1>
-        <p>Bridgewater State Univeristy</p>
-
-      </div>
-
-      <div class="col-lg-7">
-        <div class="row" id="buttons">
-        <div class="col">
-          <button><a href="resume2022.pdf">resume</a></button>
-        </div>
-        <div class="col">
-          
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-evenly">
-      <br>
-    </div>
+<div class="content-section">
+  <label>content section</label>
+  <div class="about-section active">about</div>
+  <div class="projects-section">projects</div>
+  <div class="contact-section">contact</div>
+  <div class="resume-section">resume
+        <div class="iframe-container"><iframe src="./docs/resume2022.pdf" height="800px" width="700px"></iframe></div>
   </div>
+</div>
+
+<script>
+    const aboutLabel = document.querySelector('.about');
+    const projectsLabel = document.querySelector('.projects');
+    const contactLabel = document.querySelector('.contact');
+    const resumeLabel = document.querySelector('.resume');
+
+    const aboutSection = document.querySelector('.about-section');
+    const projectsSection = document.querySelector('.projects-section');
+    const contactSection = document.querySelector('.contact-section');
+    const resumeSection = document.querySelector('.resume-section');
+
+    aboutLabel.addEventListener('click', () => {
+        aboutLabel.classList.add('active');
+        projectsLabel.classList.remove('active');
+        contactLabel.classList.remove('active');
+        resumeLabel.classList.remove('active');
+
+        aboutSection.classList.add('active');
+        projectsSection.classList.remove('active');
+        contactSection.classList.remove('active');
+        resumeSection.classList.remove('active');
+    });
+
+    projectsLabel.addEventListener('click', () => {
+        aboutLabel.classList.remove('active');
+        projectsLabel.classList.add('active');
+        contactLabel.classList.remove('active');
+        resumeLabel.classList.remove('active');
+
+        aboutSection.classList.remove('active');
+        projectsSection.classList.add('active');
+        contactSection.classList.remove('active');
+        resumeSection.classList.remove('active');
+    });
+
+    contactLabel.addEventListener('click', () => {
+        aboutLabel.classList.remove('active');
+        projectsLabel.classList.remove('active');
+        contactLabel.classList.add('active');
+        resumeLabel.classList.remove('active');
+
+        aboutSection.classList.remove('active');
+        projectsSection.classList.remove('active');
+        contactSection.classList.add('active');
+        resumeSection.classList.remove('active');
+    });
+
+    resumeLabel.addEventListener('click', () => {
+        aboutLabel.classList.remove('active');
+        projectsLabel.classList.remove('active');
+        contactLabel.classList.remove('active');
+        resumeLabel.classList.add('active');
+
+        aboutSection.classList.remove('active');
+        projectsSection.classList.remove('active');
+        contactSection.classList.remove('active');
+        resumeSection.classList.add('active');
+    });
+
+</script>
+
 </body>
 </html>

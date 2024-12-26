@@ -1,57 +1,52 @@
 body{
-    
-    color: coral;
-    background-image: url("back1.jfif");
+    color: white;
+    background-color: #292929;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
-a{
+
+.nav-section{
+    text-align: right;
+    user-select: none;
+}
+
+.nav-section label{
+    cursor: pointer;
     text-decoration: none;
-    color: black;
+    border: 1px solid white;
+    border-bottom: none;
+    padding: 10px;
+    top: 1px;
+    position: relative;
 }
-p{
-    color: green;
+
+.nav-section label:hover{
+    background-color: #787878;
+    transition: 0.3s;
 }
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-    img{
-        display: none;
-    }
-  }
-  img{
-    border-radius: 40%;
-    padding:5%
-    
+
+.nav-section label.active{
+    background-color: #474747;
+    border-bottom: 1px solid #474747;
 }
-.col-lg-4{
-    background-color: white;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: lightpink;
-    border-radius: 30px;
-    
+
+.content-section{
+    border: 1px solid white;
+    background-color: #474747;
+    padding: 100px;
 }
-.col-lg-7{
-    background-color: #ffcccc;
-    padding: 3%;
-    border-radius: 30px;
+
+.content-section div{
+    display: none;
 }
-button{
-    background-color: coral;
-    border: none;
-    text-align: center;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
+
+.content-section div.active{
+    color: yellow;
+    display: block;
 }
-a:hover{
-    color: black;
-}
-button:hover{
-    background-color: lightpink;
-}
-#buttons{
-    text-align: center;
+
+.content-section div .iframe-container{
+    text-align: right;
+    display: block;
 }

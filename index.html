@@ -12,9 +12,9 @@
     </header>
     <div class="tabs">
         <button class="tab-button active" onclick="openTab(event, 'deserts')">Deserts</button>
-        <button class="tab-button" onclick="openTab(event, 'veg')">Veggie</button>
+        <button class="tab-button" onclick="openTab(event, 'apps')">Apps</button>
         <button class="tab-button" onclick="openTab(event, 'sides')">Sides</button>
-        <button class="tab-button" onclick="openTab(event, 'resume')">Resume</button>
+        <!-- <button class="tab-button" onclick="openTab(event, 'resume')">Resume</button> -->
     </div>
     <div class="main">
 
@@ -54,13 +54,42 @@
             </div>
         </div>
 
-        <div id="veg" class="tab-content">            
-            <h2>Veggie</h2>
+        <div id="apps" class="tab-content">            
+            <h2>Apps</h2>
             <div class="cardContainer">
-                <div class="card">
-                    <img src="img/bean.jpg"></img>
-                    <label class="title">Recipe Name</label>
-                    <p>ingredients list and directions</p>
+
+                <div class="card" onclick="showDirections(this)">
+                    <div class="card-top">
+                        <img src="img/bean.jpg"></img>
+                        <label class="title">Tuna Caserole</label>
+                    </div>
+
+                    <div class="card-bottom">
+                        <ul>
+                            <li>16oz package pasta</li>
+                            <li>1tbsp vegetable oil</li>
+                            <li>1can condensed soup</li>
+                            <li>15oz can mixed vegetables</li>
+                            <li>2cups shredded cheddar cheese</li>
+                            <li>15oz can tuna, drained</li>
+                            <li>salt and pepper</li>
+                        </ul>
+                    </div>
+
+                    <div class="directions hidden">
+                        <p class="step">step 1</p>
+                        <p>Bring a large pot of salted water to a boil. Add 1 tbsp of veg oil.
+                            Add pasta and follow the box instructions for cook time. Drain pasta and 
+                            preheat oven to 350degrees.
+                        </p>
+                        <p class="step">step 2</p>
+                        <p>In a 2 quart saucepan over medium heat combine condensed soup, vegetables
+                            canned tuna, and half the cheddar cheese. fold pasta into soup mixture 
+                            and add to baking dish. cover mixture with the rest of the cheese 
+                        </p>
+                        <p class="step">step 3</p>
+                        <p>bake until cheese is melted.</p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/bean.jpg"></img>

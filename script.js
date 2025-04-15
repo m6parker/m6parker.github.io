@@ -15,3 +15,19 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
 }
+
+console.log(Array.from(document.getElementsByClassName('card')));
+
+const cardsList = Array.from(document.getElementsByClassName('card'));
+
+function showDirections(card){
+    const img = card.children[0];
+    const ingredients = card.children[1];
+    const directions = card.children[2];
+
+    ingredients.classList.toggle('hidden');
+    directions.classList.toggle('hidden');
+    // directions.style.display = "block";
+    
+    // console.log(cardsList.children[2]);
+}

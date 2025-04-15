@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 header {
@@ -100,16 +101,17 @@ header {
     justify-items: center;
     text-align: center;
     width: 300px;
+    height: auto;
     flex-basis: 0;
     flex-grow: 0;
     flex-shrink: 0;
+    transition: height .2s ease-in-out;
 }
 
 .card:hover{
     border: 2px solid white;
     transition: border-color 0.5s ease;
     /* transition: background-color 0.5s ease; */
-    background: var(--paletteOne);
     cursor: pointer;
     background-color: var(--paletteOne);
     transition: background-color .3s;
@@ -129,10 +131,35 @@ img{
     font-size: larger;
 }
 
-.card p{
+.card-bottom{
     background-color: var(--paletteTwo);
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
-    width: 250px;
+    width: 260px;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid var(--paletteTwo);
+}
+
+.card li{
+    color: var(--paletteFour);
+    text-align: left; 
+}
+
+.card .directions{
+    background-color: var(--paletteTwo);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 260px;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid var(--paletteTwo);
+}
+
+.card .step{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
 }

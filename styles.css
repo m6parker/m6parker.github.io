@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: var(--paletteFour);
+    background: linear-gradient(var(--paletteFour), var(--paletteThree));
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -95,7 +95,7 @@ header {
 .card{
     border: 2px solid var(--paletteTwo);
     background-color:  var(--paletteOne);
-    background: linear-gradient(var(--paletteTwo), var(--paletteOne));
+    background: linear-gradient(var(--paletteTwo), white);
     border-radius: 15px;
     margin: 10px;
     justify-items: center;

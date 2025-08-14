@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 204, 137);
+    font-family: 'Devin Chavez Font', sans-serif;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: coral;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Devin Chavez Font', sans-serif;
+}
+
+a:visited {
+  color: white;
+}

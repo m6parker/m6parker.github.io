@@ -19,6 +19,10 @@ body {
     border-radius: 10px;
     border: 2px solid black;
     text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    width: 70%;
+    gap: 10px;
 }
 
 .outer-container {

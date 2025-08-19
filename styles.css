@@ -7,6 +7,8 @@ body {
     margin: 0;
     background-color: rgb(255, 204, 137);
     font-family: 'Devin Chavez Font', sans-serif;
+    top: 200px;
+    position: relative;
 }
 
 .hidden{
@@ -21,8 +23,15 @@ body {
     text-align: center;
     display: flex;
     flex-flow: wrap;
-    width: 70%;
     gap: 10px;
+}
+
+.outer-container{
+    width: 424px;
+}
+
+.websites-container{
+    width: 95%;
 }
 
 .outer-container {

@@ -2,6 +2,7 @@
     --accent-color1: rgb(255, 246, 229);
     --accent-color2: rgb(54, 74, 255);
     --accent-color3: rgb(133, 148, 255);
+    --accent-color4: rgb(218, 218, 255);
     --border-color:  rgb(155, 147, 139);
 }
 
@@ -39,7 +40,7 @@ body{
 
 .window{
     position: absolute;
-    border: 5px solid var(--accent-color2);
+    border: 3px solid var(--accent-color2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -47,61 +48,6 @@ body{
     background-color: var(--accent-color1);
     color:  black;
     /* font-size: 20px; */
-}
-
-.about-window{
-    top: 100px;
-    left: 300px;
-    width: 800px;
-}
-
-.projects-window{
-    top: 600px;
-    left: 50px;
-    width: 300px;
-}
-
-.resume-window{
-    top: 700px;
-    left: 800px;
-    width: 450px;
-}
-
-.pfp-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.pfp-img{
-    height: 300px;
-    width: auto;
-}
-
-.desc-container{
-    align-content: center;
-}
-
-.desc{
-    border: 2px solid rgb(155, 147, 139);
-    padding: 10px;
-}
-
-.name-text{
-    transform: translateY(-22px);
-    background-color: var(--accent-color1);
-    width: 70%;
-    padding-left: 5px;
-}
-
-.checkbox{
-    height: 20px;
-    width: auto;
-}
-
-.list-item{
-    display: flex;
-    align-items: center;
 }
 
 .window-header{
@@ -148,6 +94,10 @@ body{
     image-rendering: pixelated;
 }
 
+.window-header .button-container .x-button:hover{
+    background-color: rgba(156, 0, 0, 0.668);
+}
+
 .window-header .button-container .fullscreen-button{
     background-image: url(img/fullscreen.png);
     background-size: 25px;
@@ -156,7 +106,124 @@ body{
     image-rendering: pixelated;
 }
 
+/* --------------- resume window ------------------ */
+
+.resume-window{
+    top: 600px;
+    left: 500px;
+}
+
+/* -------------- about me window ----------------- */
+
+.about-window{
+    top: 100px;
+    left: 300px;
+    width: 800px;
+}
+
+.pfp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pfp-img{
+    height: 300px;
+    width: auto;
+}
+
+.desc-container{
+    align-content: center;
+}
+
+.desc{
+    border: 2px solid rgb(155, 147, 139);
+    padding: 10px;
+}
+
+.name-text{
+    transform: translateY(-22px);
+    background-color: var(--accent-color1);
+    width: 70%;
+    padding-left: 5px;
+}
+
+.checkbox{
+    height: 20px;
+    width: auto;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+/* -------------- projects window ------------ */
+
+.projects-window{
+    width: 700px;
+    height: 500px;
+    display: flex;
+}
+
+.projects-window .projects-icons{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.projects-window .path{
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.projects-window .bottom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.projects-window .nav-menu{
+    background-color: var(--accent-color3);
+    width: 30%;
+    height: 100%;
+    color: rgb(30, 35, 105);
+}
+
+.projects-window .nav-menu>div{
+    /* background-color: var(--accent-color4); */
+    background: linear-gradient(90deg, var(--accent-color4) 0%, rgb(133, 148, 255) 100%);
+    margin: 5px;
+    padding: 5px;
+}
+
+.projects-window .nav-menu .folder-item{
+    font-size: 10px;
+}
+.projects-window .nav-menu .folder-item:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.projects-window .games-container{
+    margin-left: 10px;
+}
+
+.projects-window .content{
+    width: 70%;
+    height: 100%;
+}
+
+
 /* ----------- my computer ------------------ */
+
+.computer-window{
+    top: 750px;
+    left: 500px;
+}
 
 .computer-window .icon-container{
     display: flex;
@@ -191,6 +258,11 @@ body{
 }
 
 /* -------------- contact --------------------- */
+
+.contact-window{
+    top: 600px;
+    left: 800px;
+}
 
 .contact-container{
     align-content: center;

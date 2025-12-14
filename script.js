@@ -43,6 +43,7 @@ document.querySelector('.start-menu-button').addEventListener('click', () => {
 
 const closeButtons = document.querySelectorAll('.x-button');
 const desktopIcons = document.querySelectorAll('.desktop-icon');
+const documentIcons = document.querySelectorAll('.document-icon');
 closeButtons.forEach(button => {
     button.addEventListener('click', () => {
         document.querySelector(`.${button.id}-window`).classList.add('hidden');
@@ -51,6 +52,14 @@ closeButtons.forEach(button => {
 });
 
 desktopIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        if(!icon.id){return}
+        document.querySelector(`.${icon.id}-window`).classList.remove('hidden');
+        document.querySelector(`.${icon.id}-task`).classList.remove('hidden');
+    });
+});
+
+documentIcons.forEach(icon => {
     icon.addEventListener('click', () => {
         if(!icon.id){return}
         document.querySelector(`.${icon.id}-window`).classList.remove('hidden');

@@ -22,6 +22,14 @@ body{
     display: none !important;
 }
 
+.above{
+    z-index: 999 !important;
+}
+
+.below{
+    z-index: 1 !important;
+}
+
 .container{
     height: 100vh;
     overflow: hidden;
@@ -146,6 +154,59 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     image-rendering: pixelated;
+}
+
+/* ----------- my computer ------------------ */
+
+.computer-window .icon-container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.document-icon{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid transparent;
+    flex-wrap: nowrap;
+}
+
+.document-icon img{
+    width: 80%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.document-icon:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.613);
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.441);
+}
+
+/* -------------- contact --------------------- */
+
+.contact-container{
+    align-content: center;
+    padding: 50px;
+}
+
+.contact{
+    border: 2px solid rgb(155, 147, 139);
+    padding: 10px;
+}
+
+.contact-text{
+    transform: translateY(-22px);
+    background-color: var(--accent-color1);
+    width: 100px;
+    padding-left: 5px;
 }
 
 /* ----------- task bar ------------- */

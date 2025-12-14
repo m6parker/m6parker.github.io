@@ -63,7 +63,12 @@ desktopIcons.forEach(icon => {
 
 documentIcons.forEach(icon => {
     icon.addEventListener('click', () => {
-        if(!icon.id || icon.id==='games' || icon.id==='websites'){return}
+        if(!icon.id || icon.id==='games' || icon.id==='websites'){
+            return;
+        }else if(icon.id === 'projects'){
+            showFolders();
+            console.log('test', icon)
+        }
         document.querySelector(`.${icon.id}-window`).classList.remove('hidden');
         document.querySelector(`.${icon.id}-task`).classList.remove('hidden');
     });

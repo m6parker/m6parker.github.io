@@ -160,6 +160,23 @@ body{
 
 /* -------------- projects window ------------ */
 
+.projects-window .back-button{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.projects-window .back-button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+.projects-window .back-button img{
+    height: 40px;
+    width: auto;
+}
+
 .projects-window{
     width: 700px;
     height: 500px;

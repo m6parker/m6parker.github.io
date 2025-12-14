@@ -44,6 +44,8 @@ document.querySelector('.start-menu-button').addEventListener('click', () => {
 const closeButtons = document.querySelectorAll('.x-button');
 const desktopIcons = document.querySelectorAll('.desktop-icon');
 const documentIcons = document.querySelectorAll('.document-icon');
+const gameIcons = document.querySelectorAll('.game-icon');
+const websiteIcons = document.querySelectorAll('.website-icon');
 closeButtons.forEach(button => {
     button.addEventListener('click', () => {
         document.querySelector(`.${button.id}-window`).classList.add('hidden');
@@ -61,7 +63,7 @@ desktopIcons.forEach(icon => {
 
 documentIcons.forEach(icon => {
     icon.addEventListener('click', () => {
-        if(!icon.id){return}
+        if(!icon.id || icon.id==='games' || icon.id==='websites'){return}
         document.querySelector(`.${icon.id}-window`).classList.remove('hidden');
         document.querySelector(`.${icon.id}-task`).classList.remove('hidden');
     });
@@ -88,3 +90,58 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+
+function showGames(){
+    document.querySelector('.path').textContent = 'Desktop\\Projects\\Games';
+    gameIcons.forEach(icon => {
+        icon.classList.remove('hidden');
+    });
+    websiteIcons.forEach(icon => {
+        icon.classList.add('hidden');
+    });
+}
+function showWebsites(){
+    document.querySelector('.path').textContent = 'Desktop\\Projects\\Websites';
+    gameIcons.forEach(icon => {
+        icon.classList.add('hidden');
+    });
+    websiteIcons.forEach(icon => {
+        icon.classList.remove('hidden');
+    });
+}
+function hideFolderContents(){
+    document.querySelector('.path').textContent = 'Desktop\\Projects';
+    gameIcons.forEach(icon => {
+        icon.classList.add('hidden');
+    });
+    websiteIcons.forEach(icon => {
+        icon.classList.add('hidden');
+    });
+}
+function hideFolders(){
+    document.querySelector('.games-folder').classList.add('hidden')
+    document.querySelector('.websites-folder').classList.add('hidden')
+}
+function showFolders(){
+    document.querySelector('.games-folder').classList.remove('hidden')
+    document.querySelector('.websites-folder').classList.remove('hidden')
+}
+
+documentIcons.forEach(icon => {
+    icon.addEventListener('click', ()=>{
+        hideFolders();
+        if(icon.id === 'websites'){
+            showWebsites();
+        }else if(icon.id === 'games'){
+            showGames();
+        }else{
+            return;
+        }
+    });
+});
+
+document.querySelector('.back-button').addEventListener('click', ()=>{
+    showFolders();
+    hideFolderContents();
+});

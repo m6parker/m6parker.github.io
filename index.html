@@ -4,35 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mary Parker</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.cdnfonts.com/css/devin-chavez-font" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <div class="container">
 
-    <div class="outer-container">
-        <div class="container-label">Games</div>
-        <div class="container games-container">
+        <!-- desktop icons -->
 
-            <button class="connections-button"><a href="https://m6parker.github.io/ConnectionsGame/" class="ConnectionsLink">ConnectionsGame</a></button>
-            <button class="wordle-button"><a href="https://m6parker.github.io/WordleGame/" class="WordleLink">WordleGame</a></button>
-            <button class="pixelpond-button"><a href="https://m6parker.github.io/PixelPondOnline/" class="PixelPondLink">PixelPond</a></button>
-            <button class="pixelpollinator-button"><a href="https://m6parker.github.io/PixelPollinator/" class="PixelPollinatorLink">PixelPollinator</a></button>
-            <button class="poker-button"><a href="https://poker-9z6d.onrender.com" class="PokerLink">PlanningPoker</a></button>
-            <button class="honeycomb-harvest-button"><a href="https://m6parker.github.io/HoneycombHarvest-2.0" class="HoneycombHarvestLink">HoneycombHarvest</a></button>
-            <button class="rapid-restock-button"><a href="https://m6parker.github.io/RapidRestock/" class="RapidRestockLink">RapidRestock</a></button>
-
+        <div class="desktop-icon" id="computer">
+            <img src="img/computer.png" alt="wtf">
+            <div>My Computer</div>
         </div>
+
+        <div class="desktop-icon" id="projects">
+            <img src="img/file-full.ico" alt="wtf">
+            <div>Games</div>
+        </div>
+
+        <div class="desktop-icon" id="projects">
+            <img src="img/file-full.ico" alt="wtf">
+            <div>Websites</div>
+        </div>
+
+        <div class="desktop-icon" id="resume">
+            <img src="img/note-icon.ico" alt="wtf">
+            <div>Resume</div>
+        </div>
+        
+        <div class="desktop-icon" id="about">
+            <img src="img/doc-icon.png" alt="wtf">
+            <div>About Me</div>
+        </div>
+
+        <div class="desktop-icon">
+            <img src="img/doc-icon.png" alt="wtf">
+            <div>Contact</div>
+        </div>
+
+        <!-- ---------------- open windows ---------------- -->
+
+        <!-- my computer -->
+
+        <div class="window computer-window hidden">
+            <div class="window-header" id="computer">
+                <div class="window-title">My Computer</div>
+                <div class="button-container">
+                    <div>_</div>
+                    <div class="fullscreen-button"></div>
+                    <div class="x-button" id="computer"></div>
+                </div>
+            </div>
+            <div>
+                todo - desktop icons here ig idk
+            </div>
+        </div>
+
+        <!-- about me -->
+
+        <div class="window about-window">
+            <div class="window-header" id="about">
+                <div class="window-title">About Me</div>
+                <div class="button-container">
+                    <div>_</div>
+                    <div class="fullscreen-button"></div>
+                    <div class="x-button" id="about"></div>
+                </div>
+            </div>
+
+            <div class="pfp-container">
+                <img class="pfp-img" src="img/avatar.png" alt="pfp">
+                <div class="desc-container">
+                    <div class="desc">
+                        <div class="name-text">Mary Parker</div>
+                        <div class="list-item"><img class="checkbox" src="img/checkbox.PNG" alt="*">Software Engineer</div>
+                        <div class="list-item"><img class="checkbox" src="img/checkbox.PNG" alt="*">DoD Contractor</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat nesciunt praesentium ducimus sequi exercitationem cupiditate error explicabo hic veritatis reprehenderit sit molestias sapiente quasi accusantium odit, dolor, dolorem harum</div>
+            </div>
+        </div>
+
+        <!-- projects -->
+
+        <div class="window projects-window hidden">
+            <div class="window-header"  id="projects">
+                <div class="window-title">Projects</div>
+                <div class="button-container">
+                    <div>_</div>
+                    <div class="fullscreen-button"></div>
+                    <div class="x-button" id="projects"></div>
+                </div>
+            </div>
+
+            <div class="games-link"><a href="https://m6parker.github.io/" target="_blank">games</a></div>
+            <!-- <div>
+                <div><img src="img/doc-icon.png" alt="">games</div>
+            </div> -->
+            
+            <div class=""><a href="" target="_blank">websites</a></div>
+            <div class=""><a href="https://github.com/m6parker" target="_blank">github</a></div>
+        </div>
+
+        <!-- resume -->
+
+        <div class="window resume-window hidden">
+            <div class="window-header"  id="resume">
+                <div class="window-title">Resume</div>
+                <div class="button-container">
+                    <div>_</div>
+                    <div class="fullscreen-button"></div>
+                    <div class="x-button" id="resume"></div>
+                </div>
+            </div>
+
+            <div class=""><a href="img/Resume2025.pdf" target="_blank">resume</a></div>
+        </div>
+
+        <!-- start menu -->
+
+        <div class="start-menu hidden">
+            <div class="username">
+                <img src="img/logo-icon.ico" alt="">
+                Mary Parker
+            </div>
+            <img src="img/start-menu.PNG" alt="">
+        </div>
+
+        <div class="footer">
+            <div class="left-side">
+                <div class="start-menu-button"></div>
+                <div class="task about-task" id="about">About Me</div>
+                <div class="task projects-task hidden" id="projects">Projects</div>
+                <div class="task resume-task hidden" id="resume">Resume</div>
+                <div class="task computer-task hidden" id="computer">My Computer</div>
+            </div>
+            <div class="right-side">
+                <div class="time"></div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="outer-container">
-        <div class="container-label">Websites</div>
-        <div class="container websites-container">
-
-            <button class="game-asset-library-button"><a href="https://m6parker.github.io/GameAssetLibrary/" class="GameAssetLibraryLink">GameAssetLibrary</a></button>
-            <button class="pixelpond-button"><a href="https://m6parker.github.io/PixelPondOnline/" class="PixelPondLink">PixelPondOnline</a></button>
-
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

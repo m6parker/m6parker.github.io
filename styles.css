@@ -1,62 +1,252 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+:root{
+    --accent-color1: rgb(255, 246, 229);
+    --accent-color2: rgb(54, 74, 255);
+    --accent-color3: rgb(133, 148, 255);
+    --border-color:  rgb(155, 147, 139);
+}
+
+body{
+    overflow: hidden;
+    user-select: none;
     margin: 0;
-    background-color: rgb(255, 204, 137);
     font-family: 'Devin Chavez Font', sans-serif;
-    position: relative;
+    /* font-family: monospace; */
+    background-image: url(img/windowsXP.jpg);
+    image-rendering: pixelated;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hidden{
     display: none !important;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
+.container{
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ------- desktop and windows -------- */
+
+.window{
+    position: absolute;
+    border: 5px solid var(--accent-color2);
     border-radius: 10px;
-    border: 2px solid black;
-    text-align: center;
     display: flex;
-    flex-flow: wrap;
-    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+    background-color: var(--accent-color1);
+    color:  black;
+    /* font-size: 20px; */
 }
 
-.outer-container{
-    width: 424px;
+.about-window{
+    top: 100px;
+    left: 300px;
+    width: 800px;
 }
 
-.websites-container{
-    width: 95%;
+.projects-window{
+    top: 600px;
+    left: 50px;
+    width: 300px;
 }
 
-.outer-container {
-    margin: 20px;
+.resume-window{
+    top: 700px;
+    left: 800px;
+    width: 450px;
 }
 
+.pfp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-button{
-    border: 2px solid black;
-    border-radius: 5px;
+.pfp-img{
+    height: 300px;
+    width: auto;
+}
+
+.desc-container{
+    align-content: center;
+}
+
+.desc{
+    border: 2px solid rgb(155, 147, 139);
     padding: 10px;
-    background-color: coral;
+}
+
+.name-text{
+    transform: translateY(-22px);
+    background-color: var(--accent-color1);
+    width: 70%;
+    padding-left: 5px;
+}
+
+.checkbox{
+    height: 20px;
+    width: auto;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+.window-header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(20, 83, 255, 1) 0%, rgb(133, 148, 255) 100%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.window-header:hover{
     cursor: pointer;
 }
 
-button:hover{
-    background-color: rgb(194, 88, 50);
-    transition: background-color 0.2s;
+.window-header .window-title{
+    padding: 5px;
 }
 
-a{
-    text-decoration: none;
+.window-header .button-container{
+    display: flex;
+    justify-content: end;
+}
+
+.window-header .button-container>div{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 3px;
+    margin: 2px;
     color: white;
-    font-family: 'Devin Chavez Font', sans-serif;
+    background-color: rgb(99, 115, 255);
 }
 
-a:visited {
-  color: white;
+.window-header .button-container .x-button{
+    background-color: rgb(255, 61, 61);
+    background-image: url(img/x.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    image-rendering: pixelated;
+}
+
+.window-header .button-container .fullscreen-button{
+    background-image: url(img/fullscreen.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    image-rendering: pixelated;
+}
+
+/* ----------- task bar ------------- */
+
+.footer{
+    background: linear-gradient(180deg, rgba(20, 83, 255, 1) 0%, rgb(133, 148, 255) 100%);
+    color: white;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left-side, .footer .right-side{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer .right-side{
+    justify-content: end;
+    background-color: var(--accent-color3);
+    width: 120px;
+    font-size: 10px;
+    text-align: end;
+}
+
+.footer .task{
+    height: 70%;
+    width: 200px;
+    margin: 0 0 0 10px;
+    background-color: var(--accent-color3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid var(--accent-color2);
+}
+
+.start-menu-button{
+    background-image: url(img/start-menu-button.PNG);
+    background-size: cover;
+    width: 150px;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.start-menu-button:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.start-menu{
+    position: absolute;
+    bottom: 40px;
+    border: 5px solid var(--accent-color2);
+    border-radius: 10px;
+    background-color: var(--accent-color2);
+}
+
+.start-menu>div{
+    background: linear-gradient(180deg, rgba(20, 83, 255, 1) 0%, rgb(133, 148, 255) 100%);
+    color: white;
+    text-align: end;
+    align-content: center;
+    height: 80px;
+    font-size: 30px;
+    image-rendering: crisp-edges;
+}
+
+/* ---------------- desktop ---------------- */
+
+.desktop-icon{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid transparent;
+    flex-wrap: nowrap;
+}
+
+.desktop-icon img{
+    width: 80%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.desktop-icon:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.613);
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.441);
 }

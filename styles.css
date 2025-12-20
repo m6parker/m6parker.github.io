@@ -187,6 +187,8 @@ body{
     display: flex;
     flex-direction: row;
     color: black;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .projects-window .path{
@@ -226,7 +228,7 @@ body{
 }
 
 .projects-window .games-container{
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .projects-window .content{
@@ -234,6 +236,17 @@ body{
     height: 100%;
 }
 
+.projects-window a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-icons .document-icon img, .projects-icons .document-icon img{
+    height: 100px;
+    width: 100px;
+}
 
 /* ----------- my computer ------------------ */
 
@@ -261,7 +274,7 @@ body{
     flex-wrap: nowrap;
 }
 
-.document-icon img{
+.computer-window .document-icon img{
     width: 80%;
     height: auto;
     image-rendering: pixelated;

@@ -50,6 +50,7 @@ closeButtons.forEach(button => {
     button.addEventListener('click', () => {
         document.querySelector(`.${button.id}-window`).classList.add('hidden');
         document.querySelector(`.${button.id}-task`).classList.add('hidden');
+        hideFolderContents();
     });
 });
 
@@ -58,6 +59,7 @@ desktopIcons.forEach(icon => {
         if(!icon.id){return}
         document.querySelector(`.${icon.id}-window`).classList.remove('hidden');
         document.querySelector(`.${icon.id}-task`).classList.remove('hidden');
+        showFolders();
     });
 });
 
@@ -127,6 +129,7 @@ function hideFolders(){
     document.querySelector('.websites-folder').classList.add('hidden')
 }
 function showFolders(){
+    hideFolderContents();
     document.querySelector('.games-folder').classList.remove('hidden')
     document.querySelector('.websites-folder').classList.remove('hidden')
 }

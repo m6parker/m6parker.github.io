@@ -1,285 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary Parker</title>
-    <link href="https://fonts.cdnfonts.com/css/devin-chavez-font" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
-    <div class="container">
+  <div class="nav">
+    <button class="nav-button selected" id="home">home</button>
+    <button class="nav-button" id="games">games</button>
+    <button class="nav-button" id="books">books</button>
+  </div>
 
-        <!-- desktop icons -->
+  <div class="main">
+    <div id="home" class="page">
+      <div class="grid">
 
-        <div class="desktop-icon" id="computer">
-            <img src="img/computer.png" alt="wtf">
-            <div>My Computer</div>
+        <div class="block">
+          <h2>about me</h2>
+          <div class="sub-grid">
+            <div class="sub-block about">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque repellat delectus voluptatem fugit ab nobis non nostrum. Esse, placeat accusantium! Exercitationem non cupiditate minima laborum similique dolor eligendi ea.
+            </div>
+          </div>
+          </div>
+
+        <div class="block">
+          <h2>hobbies</h2>
+          <div class="sub-grid">
+            <div class="sub-block books">books</div>
+            <div class="sub-block other">other</div>
+            <div class="sub-block thing">thing</div>
+          </div>
         </div>
 
-        <div class="desktop-icon" id="projects">
-            <img src="img/file-full.ico" alt="wtf">
-            <div>Projects</div>
+        <div class="block">
+          <h2>projects</h2>
+          <div class="sub-grid">
+            <div class="sub-block">websites</div>
+            <div class="sub-block games">games</div>
+          </div>
         </div>
 
-        <div class="desktop-icon" id="resume">
-            <img src="img/note-icon.ico" alt="wtf">
-            <div>Resume</div>
-        </div>
-        
-        <div class="desktop-icon" id="about">
-            <img src="img/doc-icon.png" alt="wtf">
-            <div>About Me</div>
-        </div>
-
-        <div class="desktop-icon" id="contact">
-            <img src="img/doc-icon.png" alt="wtf">
-            <div>Contact</div>
-        </div>
-
-        <!-- ---------------- open windows ---------------- -->
-
-        <!-- my computer -->
-
-        <div class="window computer-window hidden">
-            <div class="window-header" id="computer">
-                <div class="window-title">My Computer</div>
-                <div class="button-container">
-                    <div>_</div>
-                    <div class="fullscreen-button"></div>
-                    <div class="x-button" id="computer"></div>
-                </div>
-            </div>
-
-            <div class="icon-container">
-                <div class="document-icon" id="projects">
-                    <img src="img/file-full.ico" alt="wtf">
-                    <div>Projects</div>
-                </div>
-                
-                <div class="document-icon" id="resume">
-                    <img src="img/note-icon.ico" alt="wtf">
-                    <div>Resume</div>
-                </div>
-                
-                <div class="document-icon" id="about">
-                    <img src="img/doc-icon.png" alt="wtf">
-                    <div>About Me</div>
-                </div>
-                
-                <div class="document-icon" id="contact">
-                    <img src="img/doc-icon.png" alt="wtf">
-                    <div>Contact</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- about me -->
-
-        <div class="window about-window">
-            <div class="window-header" id="about">
-                <div class="window-title">About Me</div>
-                <div class="button-container">
-                    <div>_</div>
-                    <div class="fullscreen-button"></div>
-                    <div class="x-button" id="about"></div>
-                </div>
-            </div>
-
-            <div class="pfp-container">
-                <img class="pfp-img" src="img/avatar.png" alt="pfp">
-                <div class="desc-container">
-                    <div class="desc">
-                        <div class="name-text">Mary Parker</div>
-                        <div class="list-item"><img class="checkbox" src="img/checkbox.PNG" alt="*">Software Engineer</div>
-                        <div class="list-item"><img class="checkbox" src="img/checkbox.PNG" alt="*">DoD Contractor</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat nesciunt praesentium ducimus sequi exercitationem cupiditate error explicabo hic veritatis reprehenderit sit molestias sapiente quasi accusantium odit, dolor, dolorem harum</div>
-            </div>
-        </div>
-
-        <!-- projects -->
-
-        <div class="window projects-window hidden">
-            <div class="window-header"  id="projects">
-                <div class="window-title">Projects</div>
-                <div class="button-container">
-                    <div>_</div>
-                    <div class="fullscreen-button"></div>
-                    <div class="x-button" id="projects"></div>
-                </div>
-            </div>
-
-            <div class="back-button">
-                <img src="img/back-arrow.png" alt="">
-                <div>back</div>
-            </div>
-            <div class="path">Desktop\Projects</div>
-            <div class="bottom">
-                <div class="nav-menu">
-                    <div>
-                        <div class="folder">Games</div>
-                        <div class="games-container">
-                            <div class="folder-item" id="">PixelPond</div>
-                            <div class="folder-item" id="">HoneycombHarvest</div>
-                            <div class="folder-item" id="">RapidRestock</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="folder">Websites</div>
-                        <div class="games-container">
-                            <div class="folder-item" id="">ReciptRealm</div>
-                            <div class="folder-item" id="">GameAssetLibrary</div>
-                            <div class="folder-item" id="">PixelPondOnline</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    
-                    <div class="projects-icons">
-                        <div class="document-icon games-folder" id="games">
-                            <img src="img/file-full.ico" alt="wtf">
-                            <div>Games</div>
-                        </div>
-                        
-                        <div class="document-icon websites-folder" id="websites">
-                            <img src="img/file-full.ico" alt="wtf">
-                            <div>Websites</div>
-                        </div>
-
-                        <div class="document-icon game-icon hidden">
-                            <a href="https://m6parker.github.io/PixelPondOnline/" target="_blank">
-                                <img src="img/goldfish.png" alt="wtf">
-                                <div>PixelPond</div>
-                            </a>
-                        </div>
-                        
-                        <div class="document-icon game-icon hidden">
-                            <a href="https://m6parker.github.io/HoneycombHarvest-2.0" target="_blank">
-                                <img src="img/bee.png" alt="wtf">
-                                <div>HoneycombHarvest</div>
-                            </a>
-                        </div>             
-
-                        <div class="document-icon game-icon hidden">
-                            <a href="https://m6parker.github.io/RapidRestock/" target="_blank">
-                                <img src="img/cake.png" alt="wtf">
-                                <div>RapidRestock</div>
-                            </a>
-                        </div>
-
-                        <div class="document-icon website-icon hidden">
-                            <a href="https://m6parker.github.io/PixelPondOnline/" target="_blank">
-                                <img src="img/goldfish.png" alt="wtf">
-                                <div>PixelPondOnline</div>
-                            </a>
-                        </div>
-                        
-                        <div class="document-icon website-icon hidden">
-                            <a href="https://m6parker.github.io/RecipeRealm" target="_blank">
-                                <img src="img/cake.png" alt="wtf">
-                                <div>RecipeRealm</div>
-                            </a>
-                        </div>             
-
-                        <div class="document-icon website-icon hidden">
-                            <a href="https://m6parker.github.io/GameAssetLibrary/" target="_blank">
-                                <img src="img/frog.png" alt="wtf">
-                                <div>GameAssetLibrary</div>
-                            </a>
-                        </div>
-                        
-                        <div class="document-icon website-icon hidden">
-                            <a href="https://poker-9z6d.onrender.com" target="_blank">
-                                <img src="img/poker.PNG" alt="wtf">
-                                <div>PlanningPoker</div>
-                            </a>
-                        </div>
-                        
-                        <div class="document-icon website-icon hidden">
-                            <img src="img/minecraft-icon.png" alt="wtf">
-                            <div>MinecraftMods</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            
-        </div>
-
-        <!-- resume -->
-
-        <div class="window resume-window hidden">
-            <div class="window-header"  id="resume">
-                <div class="window-title">Resume</div>
-                <div class="button-container">
-                    <div>_</div>
-                    <div class="fullscreen-button"></div>
-                    <div class="x-button" id="resume"></div>
-                </div>
-            </div>
-
-            <div class=""><a href="img/Resume2025.pdf" target="_blank">resume</a></div>
-        </div>
-
-        <!-- contact window -->
-
-        <div class="window contact-window hidden">
-            <div class="window-header" id="contact">
-                <div class="window-title">Contact</div>
-                <div class="button-container">
-                    <div>_</div>
-                    <div class="fullscreen-button"></div>
-                    <div class="x-button" id="contact"></div>
-                </div>
-            </div>
-
-            <div class="contact-container">
-                <div class="contact">
-                    <div class="contact-text">My Info</div>
-                    <div>Email: mparker0693@gmail.com</div>
-                    <div>Phone: 508-901-7964</div>
-                    <div>Github: <a href="https://github.com/m6parker" target="_blank">github.com/m6parker</a></div>
-                    <div>LinkedIn: </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- start menu -->
-
-        <div class="start-menu hidden">
-            <div class="username">
-                <img src="img/logo-icon.ico" alt="">
-                Mary Parker
-            </div>
-            <img src="img/start-menu.PNG" alt="">
-        </div>
-
-        <div class="footer">
-            <div class="left-side">
-                <div class="start-menu-button"></div>
-                <div class="task about-task" id="about">About Me</div>
-                <div class="task projects-task hidden" id="projects">Projects</div>
-                <div class="task resume-task hidden" id="resume">Resume</div>
-                <div class="task computer-task hidden" id="computer">My Computer</div>
-                <div class="task contact-task hidden" id="contact">Contact</div>
-            </div>
-            <div class="right-side">
-                <div class="time"></div>
-            </div>
-        </div>
-
+      </div>
     </div>
 
+    <div id="games" class="page hidden">
+      <h2>games scroll container</h2>
+      <div class="split">
+        <div class="game-list">
+          <div class="game-item selected">PixelPond</div>
+          <div class="game-item">farm game</div>
+          <div class="game-item">placeholder</div> 
+          <div class="game-item">placeholder</div> 
+          <div class="game-item">placeholder</div>
+        </div>
+        
+        <div class="game-list">
+          <h2>games info container</h2>
+          <div class="game-info pixelpond">
+            <h3 id="title">Pixel Pond</h3>
+            <p id="desc">pixel art style game made in unity</p>
+          </div>
+          <div class="game-info farmgame">
+            <h3 id="title">Farm Game</h3>
+            <p id="desc">pixel art style game made in godot</p>
+          </div>
+          <div class="game-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+          <div class="game-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+          <div class="game-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div id="books" class="page hidden">
+      <h2>books</h2>
 
-    <script src="script.js"></script>
+      <div class="split">
+        <div class="book-list">
+          <div class="book-item selected">book 1</div>
+          <div class="book-item">book 2</div>
+          <div class="book-item">placeholder</div> 
+          <div class="book-item">placeholder</div> 
+          <div class="book-item">placeholder</div>
+        </div>
+        
+        <div class="book-list">
+          <h2>books info container</h2>
+          <div class="book-info">
+            <h3 id="title">book1</h3>
+            <p id="desc">review here</p>
+          </div>
+          <div class="book-info">
+            <h3 id="title">book2</h3>
+            <p id="desc">review here</p>
+          </div>
+          <div class="book-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+          <div class="book-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+          <div class="book-info">
+            <h3>placeholder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

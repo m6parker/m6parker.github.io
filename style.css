@@ -5,6 +5,7 @@
 
 body{
   font-family: sans-serif;
+  background-color: rgb(144, 118, 118);
 }
 
 .hidden{
@@ -12,6 +13,7 @@ body{
 }
 
 .nav{
+  background-color: rgb(90, 74, 74);
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -21,6 +23,7 @@ body{
 
 .nav-button{
   border: 1px solid black;
+  border-radius: 15px;
   cursor: pointer;
   padding: 12px 20px;
 }
@@ -42,13 +45,13 @@ body{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 15px;
-  color: wheat;
+  color: white;
 }
 
 .group-container{
   /* aspect-ratio: 1 / 1; */
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,18 +59,18 @@ body{
 
 .aboutme {
   grid-column: span 2;
-  background-color: rgb(91, 186, 241);
-  border: 3px solid rgb(61, 112, 144);
+  background-color: rgb(110, 110, 110);
+  border: 1px solid rgb(49, 49, 49);
 }
 .hobby {
   grid-column: span 1;
-  background-color: rgb(17, 167, 222);
-  border: 3px solid rgb(13, 123, 164);
+  background-color: rgb(110, 110, 110);
+  border: 1px solid rgb(49, 49, 49);
 }
 .proj {
   grid-column: span 3;
-  background-color: rgb(31, 122, 178);
-  border: 3px solid rgb(16, 87, 131);
+  background-color: rgb(110, 110, 110);
+  border: 1px solid rgb(49, 49, 49);
 }
 
 @media (max-width: 700px) {
@@ -85,14 +88,14 @@ body{
 .inner-group-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  gap: 6px;
+  gap: 15px;
 }
 
 .item-container{
   aspect-ratio: 1 / 1;
-  background-color: 	rgb(205,174,114);
-  border: 3px solid 	rgb(158, 134, 88);
-  border-radius: 20px;
+  background-color: rgb(79, 79, 79);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
   display: grid;
   place-items: center;
   font-size: 0.85rem;

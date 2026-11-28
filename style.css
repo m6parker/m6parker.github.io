@@ -1,108 +1,150 @@
-* { 
-  box-sizing: border-box; 
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: system-ui, sans-serif;
-  user-select: none;
+}
+
+body{
+  font-family: sans-serif;
 }
 
 .hidden{
   display: none;
 }
 
-.nav {
+.nav{
   display: flex;
   justify-content: center;
   gap: 8px;
   padding: 12px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 }
 
 .nav-button{
-  border: 1px solid #000;
+  border: 1px solid black;
   cursor: pointer;
-  padding: 20px;
+  padding: 12px 20px;
 }
 
-.main {
+.nav-button.selected{
+  background: black;
+  color: white;
+}
+
+.main{
   max-width: 900px;
   margin: 0 auto;
   padding: 24px 16px;
 }
 
-
 /* --- home page --- */
 
-.grid {
+.main-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  color: wheat;
 }
 
-.block {
-  aspect-ratio: 1 / 1;
-  border: 1px solid #000;
+.group-container{
+  /* aspect-ratio: 1 / 1; */
+  border-radius: 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sub-grid {
+.aboutme {
+  grid-column: span 2;
+  background-color: rgb(91, 186, 241);
+  border: 3px solid rgb(61, 112, 144);
+}
+.hobby {
+  grid-column: span 1;
+  background-color: rgb(17, 167, 222);
+  border: 3px solid rgb(13, 123, 164);
+}
+.proj {
+  grid-column: span 3;
+  background-color: rgb(31, 122, 178);
+  border: 3px solid rgb(16, 87, 131);
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutme,
+  .hobby,
+  .proj {
+    grid-column: span 1;
+  }
+}
+
+.inner-group-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   gap: 6px;
 }
 
-.sub-block {
+.item-container{
   aspect-ratio: 1 / 1;
-  border: 1px solid #000;
+  background-color: 	rgb(205,174,114);
+  border: 3px solid 	rgb(158, 134, 88);
+  border-radius: 20px;
   display: grid;
   place-items: center;
   font-size: 0.85rem;
   cursor: pointer;
 }
 
-.split {
+.item-container:hover{
+  opacity: 50%;
+}
+
+/* --- games / books --- */
+
+.split-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 16px;
-  height: 320px;
+  min-height: 320px;
+}
+
+.game-list, .book-list {
+  border: 1px solid black;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.game-item.selected, .book-item.selected {
+  background: black;
+  color: white;
 }
 
 /* --- game page --- */
 
-.game-list {
-  border: 1px solid #000;
-  overflow-y: auto;
-}
-
-.game-item{
+.game-item {
   padding: 12px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
   cursor: pointer;
 }
 
-.game-item.selected, .book-item.selected {
-  background: #000;
-  color: #fff;
-}
-
-.game-detail{
-  border: 1px solid #000;
-  padding: 16px;
+.game-info {
+  padding: 8px 0;
 }
 
 /* --- book page --- */
 
-.book-list {
-  border: 1px solid #000;
-  padding: 16px;
+.book-item {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  width: fit-content;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-.book-item{
-  padding: 10px;
-  margin: 5px;
-  width: 30px;
-  border: 1px solid #000;
-  cursor: pointer;
+.book-info {
+  padding: 8px 0;
 }

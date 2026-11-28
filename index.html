@@ -14,111 +14,123 @@
     <button class="nav-button" id="books">books</button>
   </div>
 
+  
   <div class="main">
+
+    <!-- home page -->
+
     <div id="home" class="page">
-      <div class="grid">
+      <div class="main-container">
 
-        <div class="block">
+        <div class="group-container aboutme">
           <h2>about me</h2>
-          <div class="sub-grid">
-            <div class="sub-block about">
+          <div class="inner-group-container">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque repellat delectus voluptatem fugit ab nobis non nostrum. Esse, placeat accusantium! Exercitationem non cupiditate minima laborum similique dolor eligendi ea.
-            </div>
-          </div>
-          </div>
-
-        <div class="block">
-          <h2>hobbies</h2>
-          <div class="sub-grid">
-            <div class="sub-block books">books</div>
-            <div class="sub-block other">other</div>
-            <div class="sub-block thing">thing</div>
           </div>
         </div>
 
-        <div class="block">
+        <div class="group-container hobby">
+          <h2>hobbies</h2>
+          <div class="inner-group-container">
+            <div class="item-container" id="books">books</div>
+            <div class="item-container" id="other">other</div>
+            <div class="item-container" id="thing">thing</div>
+          </div>
+        </div>
+
+        <div class="group-container proj">
           <h2>projects</h2>
-          <div class="sub-grid">
-            <div class="sub-block">websites</div>
-            <div class="sub-block games">games</div>
+          <div class="inner-group-container">
+            <div class="item-container">websites</div>
+            <div class="item-container" id="games">games</div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div id="games" class="page hidden">
+  <!-- games page -->
+
+    <div id="games-page" class="page hidden">
       <h2>games scroll container</h2>
-      <div class="split">
+      <div class="split-container">
+
         <div class="game-list">
-          <div class="game-item selected">PixelPond</div>
-          <div class="game-item">farm game</div>
-          <div class="game-item">placeholder</div> 
-          <div class="game-item">placeholder</div> 
-          <div class="game-item">placeholder</div>
+          <div class="game-item pixelpond selected">PixelPond</div>
+          <div class="game-item farmgame">farm game</div>
+          <div class="game-item placeholder1">placeholder1</div> 
+          <div class="game-item placeholder2">placeholder2</div> 
+          <div class="game-item placeholder3">placeholder3</div>
         </div>
         
         <div class="game-list">
           <h2>games info container</h2>
+
           <div class="game-info pixelpond">
-            <h3 id="title">Pixel Pond</h3>
-            <p id="desc">pixel art style game made in unity</p>
+            <h3 class="title">Pixel Pond</h3>
+            <p class="desc">pixel art style game made in unity</p>
           </div>
+
           <div class="game-info farmgame">
-            <h3 id="title">Farm Game</h3>
-            <p id="desc">pixel art style game made in godot</p>
+            <h3 class="title">Farm Game</h3>
+            <p class="desc">pixel art style game made in godot</p>
           </div>
-          <div class="game-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+
+          <div class="game-info placeholder1">
+            <h3 class="title">placeholder 1</h3>
+            <p class="desc">Lorem ipsum dolor sit amet cons similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
-          <div class="game-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+
+          <div class="game-info placeholder2">
+            <h3 class="title">placeholder 2 </h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fuique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
-          <div class="game-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+
+          <div class="game-info placeholder3">
+            <h3 class="title">placeholder 3</h3>
+            <p class="desc">Lorem ipsum  adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
+
         </div>
+
       </div>
     </div>
       
-    <div id="books" class="page hidden">
+  <!-- books page -->
+
+    <div id="books-page" class="page hidden">
       <h2>books</h2>
 
-      <div class="split">
+      <div class="split-container">
+
+        <!-- bookshelf -->
         <div class="book-list">
           <div class="book-item selected">book 1</div>
           <div class="book-item">book 2</div>
-          <div class="book-item">placeholder</div> 
-          <div class="book-item">placeholder</div> 
-          <div class="book-item">placeholder</div>
+          <div class="book-item">book 3</div>
         </div>
         
+        <!-- review section -->
         <div class="book-list">
           <h2>books info container</h2>
-          <div class="book-info">
-            <h3 id="title">book1</h3>
-            <p id="desc">review here</p>
+
+          <div class="book-info book1">
+            <h3 class="title">book 1</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
-          <div class="book-info">
-            <h3 id="title">book2</h3>
-            <p id="desc">review here</p>
+
+          <div class="book-info book2">
+            <h3 class="title">book2</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
-          <div class="book-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
+
+          <div class="book-info book3">
+            <h3 class="title">book 3</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
           </div>
-          <div class="book-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
-          </div>
-          <div class="book-info">
-            <h3>placeholder</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id fugiat vel quisquam similique soluta omnis optio quod unde dicta voluptate aliquam repellat perferendis maiores ex sapiente? Nulla, aut! Nisi.</p>
-          </div>
+
         </div>
+
       </div>
 
     </div>
